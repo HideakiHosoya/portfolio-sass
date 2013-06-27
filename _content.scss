@@ -1,12 +1,18 @@
-.client_data p{
-	text-indent: -7.5em;
-	padding-left: 7.5em;
-}
 h2{
     font-size: 25px;
     font-weight: normal;
     letter-spacing: 0.05em;
     line-height: 130%;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.client_data p{
+	text-indent: -7.5em;
+	padding-left: 7.5em;
 }
 .big_img img{
 	-webkit-box-shadow: #777 0 0 7px;
