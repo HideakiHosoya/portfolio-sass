@@ -10,7 +10,7 @@ body {
   padding:0;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: none;
-  font-family: "Baskerville","Times New Roman","Times","ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
   line-height: 150%;
   font-size: 14px;
   letter-spacing: 1pt;
@@ -34,28 +34,20 @@ img{
 /* ---- header---- */
 header{
 	margin-top: 50px;
-	line-height: 70px;
-	font-family: "Baskerville","Times New Roman","Times",serif;
 	h1{
 		float: left;
 		font-size: 70px;
 		font-weight: normal;
 		margin: 0;
 		line-height: 100%;
+    font-family: "Baskerville","Times New Roman","Times",serif;
 	}
 }
 /* ---- nav ---- */
 nav{
 	float: right;
 }
-nav a, nav a:visited {
-    text-decoration: none;
-    color: #333;
-}
-nav a:hover {
-    color: #e4007f;
-    border-bottom-style: solid;
-}
+
 #pageslide {
   /* These styles MUST be included. Do not change. */
   display: none;
@@ -85,8 +77,12 @@ ul#nav {
 #nav li{
 	float: left;
 	margin-right: 20px;
-	color: #e4007f;
 }
+/* ---- footer ---- */
+footer{
+  border-top: solid 1px #eee;
+}
+
 
 /* Mobile Landscape and Portrait */
 @media only screen and (max-width: 767px) {

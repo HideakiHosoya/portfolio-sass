@@ -1,8 +1,11 @@
 h2{
-    font-size: 25px;
+    font-size: 200%;
     font-weight: normal;
     letter-spacing: 0.05em;
     line-height: 130%;
+}
+#portfolio h2{
+    border-bottom: solid 1px #eee;
 }
 a{
 	text-decoration: none;
@@ -14,12 +17,7 @@ a:hover{
 	text-indent: -7.5em;
 	padding-left: 7.5em;
 }
-.big_img img{
-	-webkit-box-shadow: #777 0 0 7px;
-	-moz-box-shadow: #777 0 0 7px;
-	box-shadow: #777 0 0 7px;
-	@include pie;
-}
+
 .click_img {
 		padding-top: 15px;
 		li{
@@ -29,15 +27,20 @@ a:hover{
 			width: 60px;
 			height: 60px;
 			cursor:pointer;
+			-webkit-box-shadow: #444 0px 0px 4px;
+			-moz-box-shadow: #444 0px 0px 4px;
+			box-shadow: #444 0px 0px 4px;
+			@include pie;
 			&:hover{
-				-webkit-box-shadow: #666 0px 0px 7px;
-				-moz-box-shadow: #666 0px 0px 7px;
-				box-shadow: #666 0px 0px 7px;
+				-webkit-box-shadow: #444 0px 0px 10px;
+				-moz-box-shadow: #444 0px 0px 10px;
+				box-shadow: #444 0px 0px 10px;
 				@include pie;
 			}
 		}
 	}
 }
+
 .pf_box{
 	padding-bottom: 50px
 }
@@ -49,6 +52,7 @@ p.url{
 	height:250px;
 	overflow: hidden;
 }
+
 .gallery_thumb li a{
 	display:block;
 }
@@ -77,11 +81,46 @@ p.url{
 	.inner_col .c8{
 		@include c8;
 	}
+	.gallery_big{
+		height:450px;
+		overflow: hidden;
+	}
+}
+.grd_border{
+	height:1px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.100, #f9f9f9), color-stop(0.50, #9a9a9a), color-stop(0.00, #f9f9f9));
+	background: -webkit-linear-gradient(left, #f9f9f9 0%, #9a9a9a 10%, #f9f9f9 100%);
+	background: -moz-linear-gradient(left, #f9f9f9 0%, #9a9a9a 10%, #f9f9f9 100%);
+	background: -o-linear-gradient(left, #f9f9f9 0%, #9a9a9a 10%, #f9f9f9 100%);
+	background: -ms-linear-gradient(left, #f9f9f9 0%, #9a9a9a 10%, #f9f9f9 100%);
+	background: linear-gradient(left, #f9f9f9 0%, #9a9a9a 10%, #f9f9f9 100%);
+	-pie-background: linear-gradient(left, #f9f9f9 0%, #9a9a9a 10%, #f9f9f9 100%);
+	@include pie;
+}
+a.btn_magenta{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  background-color: #bf0d96;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 7px;
+  padding-left: 7px;
+  font-size: 14px;
+  font-weight: bold;
+ &:hover {
+    border-bottom-style: solid;
+    background-color: #e487cf;
+    text-decoration: none;
+  }
 }
 /*320px以下に適用*/
 @media only screen and (max-width: 320px){
 	body{
 		font-size: 13px;
+	}
+	h2{
+	  font-size: 135%;
 	}
 	.pf_box{
 		padding-bottom: 20px
@@ -92,6 +131,9 @@ p.url{
 	}
   .c5.big_img{
 		margin-bottom:10px;
+	}
+	#nav a.btn_magenta{
+  background-color: transparent;
 	}
 }
 
